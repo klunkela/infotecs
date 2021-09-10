@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>infotecs</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="container">
+    <div id="container_left">
+        <div id="sort_table_wrapper">
+            <label for="sortData"></label>
+            <select id="sortData" onchange="sortData()">
+                <option value="value01">Сортировать по</option>
+                <option value="value02">Имя А-Я</option>
+                <option value="value03">Имя Я-А</option>
+                <option value="value04">Фамилия А-Я</option>
+                <option value="value05">Фамилия Я-А</option>
+                <option value="value06">Описание А-Я</option>
+                <option value="value07">Описание Я-А</option>
+                <option value="value08">Цвет глаз А-Я</option>
+                <option value="value09">Цвет глаз Я-А</option>
+
+            </select>
+        </div>
+        <div id="show_columns_wrapper">
+            <div>
+                show firstName
+                <input checked type="checkbox" id="show_firstName" name="show_firstName"
+                       onclick="toggleFirstName()"/>
+            </div>
+            <div>
+                show LastName
+                <input checked type="checkbox" id="show_lastName" name="show_lastName"
+                       onclick="toggleLastName()"/>
+            </div>
+            <div>
+                show about
+                <input checked type="checkbox" id="show_about" name="show_about"
+                       onclick="toggleAbout()"/>
+            </div>
+            <div>
+                show eye_color
+                <input checked type="checkbox" id="show_eye_color" name="show_eye_color"
+                       onclick="toggleEyeColor()"/>
+            </div>
+        </div>
+    </div>
+    <div id="container_center">
+        <div id="pages"></div>
+        <table id="table_wrapper">
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </div>
+    <div id="container_right">
+
+    </div>
+
+</div>
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+
+</html>
